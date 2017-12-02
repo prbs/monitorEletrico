@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="Bolt" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBtn" destination="7qR-Pj-ceV" id="Dw5-FL-6j7"/>
+                <outlet property="msg" destination="d7B-10-5Lu" id="IXv-4E-Tdy"/>
+                <outlet property="tipBtn" destination="2rX-9V-Qi7" id="swM-CW-d33"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="aI7-lU-sKW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2Z-wj-aQv">
+                    <rect key="frame" x="28" y="50" width="319" height="567"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backpopupCerta_popup.png" translatesAutoresizingMaskIntoConstraints="NO" id="9nC-vz-ad0">
+                            <rect key="frame" x="0.0" y="0.0" width="319" height="334"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="334" id="tZM-Is-6ii"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alerta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCa-RZ-JwB">
+                            <rect key="frame" x="0.0" y="57" width="319" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="vgP-NH-fGi"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                            <color key="textColor" red="0.99961079389999996" green="1" blue="0.99563025409999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qR-Pj-ceV">
+                            <rect key="frame" x="236" y="8" width="75" height="75"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="75" id="a8t-9f-eFZ"/>
+                                <constraint firstAttribute="height" constant="75" id="yqC-3Y-liD"/>
+                            </constraints>
+                            <state key="normal" image="close-btn.png"/>
+                            <connections>
+                                <action selector="closePopupFromCloseBtn:" destination="-1" eventType="touchUpInside" id="gV6-Bn-ThQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rX-9V-Qi7">
+                            <rect key="frame" x="59" y="277" width="200" height="33"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="200" id="C7w-IR-zpg"/>
+                                <constraint firstAttribute="height" constant="33" id="Fdt-8l-kPh"/>
+                            </constraints>
+                            <state key="normal" title="Dicas" backgroundImage="btn-blue.png">
+                                <color key="titleColor" red="0.1647058874" green="0.4431372583" blue="0.61960786580000005" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="goTips:" destination="-1" eventType="touchUpInside" id="gmm-3u-5q3"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Você consumiu 90% do valor pré-estabelecido em sua meta, e ainda temos 7 dias para o fechamento." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d7B-10-5Lu">
+                            <rect key="frame" x="16" y="143" width="287" height="126"/>
+                            <accessibility key="accessibilityConfiguration">
+                                <bool key="isElement" value="NO"/>
+                            </accessibility>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="126" id="hu3-TP-F6Q"/>
+                            </constraints>
+                            <color key="textColor" red="0.52438604831695557" green="0.5841335654258728" blue="0.59513098001480103" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <variation key="heightClass=compact">
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            </variation>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="7qR-Pj-ceV" firstAttribute="trailing" secondItem="r2Z-wj-aQv" secondAttribute="trailingMargin" id="5im-aF-f4A"/>
+                        <constraint firstItem="9nC-vz-ad0" firstAttribute="top" secondItem="r2Z-wj-aQv" secondAttribute="top" id="9fO-id-Ula"/>
+                        <constraint firstItem="9nC-vz-ad0" firstAttribute="leading" secondItem="r2Z-wj-aQv" secondAttribute="leading" id="D4A-Fj-Z5B"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="centerX" secondItem="wCa-RZ-JwB" secondAttribute="centerX" id="N6b-An-XHn"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="centerX" secondItem="r2Z-wj-aQv" secondAttribute="centerX" id="NG5-aQ-Ab8"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="top" secondItem="d7B-10-5Lu" secondAttribute="bottom" constant="8" id="NJm-nx-2vU"/>
+                        <constraint firstItem="wCa-RZ-JwB" firstAttribute="width" secondItem="r2Z-wj-aQv" secondAttribute="width" id="NrI-b9-Y8Y"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="centerX" secondItem="9nC-vz-ad0" secondAttribute="centerX" id="U6Q-VP-dba"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="top" secondItem="r2Z-wj-aQv" secondAttribute="top" constant="277" id="WvC-eP-GyW"/>
+                        <constraint firstItem="7qR-Pj-ceV" firstAttribute="top" secondItem="r2Z-wj-aQv" secondAttribute="topMargin" id="ZRl-Bg-DOj"/>
+                        <constraint firstItem="d7B-10-5Lu" firstAttribute="width" secondItem="r2Z-wj-aQv" secondAttribute="width" multiplier="0.9" id="irq-ca-lFL"/>
+                        <constraint firstItem="d7B-10-5Lu" firstAttribute="top" secondItem="wCa-RZ-JwB" secondAttribute="bottom" constant="61" id="jCY-fI-qKr"/>
+                        <constraint firstItem="2rX-9V-Qi7" firstAttribute="centerX" secondItem="d7B-10-5Lu" secondAttribute="centerX" id="qU9-14-T2E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="r2Z-wj-aQv" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.85" id="Fd9-D1-qTR"/>
+                <constraint firstItem="r2Z-wj-aQv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="QuZ-rQ-fIm"/>
+                <constraint firstItem="r2Z-wj-aQv" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="S1H-Gc-QCW"/>
+                <constraint firstItem="r2Z-wj-aQv" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.85" id="vQq-Le-GVi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="249.5" y="376.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backpopupCerta_popup.png" width="662" height="662"/>
+        <image name="btn-blue.png" width="1024" height="183"/>
+        <image name="close-btn.png" width="228" height="225"/>
+    </resources>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeMessageViewController" customModule="Watts_ON" customModuleProvider="target">
+            <connections>
+                <outlet property="bannerContainer" destination="PHX-LU-gsk" id="ZGo-Cu-DmR"/>
+                <outlet property="boltContainer" destination="3lV-NM-lzE" id="jLx-Bv-2aL"/>
+                <outlet property="boltImage" destination="SCr-e1-OSm" id="cME-nx-BSj"/>
+                <outlet property="innerContainer" destination="5mH-aF-q2s" id="XdS-di-4J4"/>
+                <outlet property="outterContainer" destination="fdi-32-8Xk" id="3Jd-cF-wmt"/>
+                <outlet property="pointer" destination="zAV-r9-axo" id="EzA-Cq-Em5"/>
+                <outlet property="view" destination="iN0-l3-epB" id="c6z-G1-fhr"/>
+                <outlet property="viewMsg" destination="xEZ-jh-Cih" id="BGO-OU-ogH"/>
+                <outlet property="viewTitle" destination="NON-Sg-B3O" id="21x-kN-cCa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdi-32-8Xk">
+                    <rect key="frame" x="37" y="174" width="300" height="320"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5mH-aF-q2s">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="320"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHX-LU-gsk">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="136"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMini.png" translatesAutoresizingMaskIntoConstraints="NO" id="8TH-8X-kea">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="137"/>
+                                        </imageView>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dnJ-bk-OQ1">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="137"/>
+                                            <color key="backgroundColor" red="0.16470588743686676" green="0.44313725829124451" blue="0.61960786581039429" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bem vindo !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NON-Sg-B3O">
+                                    <rect key="frame" x="10" y="181" width="279" height="35"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crie um novo local e comece a economizar agora (:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEZ-jh-Cih">
+                                    <rect key="frame" x="10" y="229" width="279" height="70"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.52438604830000002" green="0.58413356540000005" blue="0.59513097999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lV-NM-lzE">
+                                    <rect key="frame" x="92" y="54" width="115" height="115"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bolt-baloon.png" translatesAutoresizingMaskIntoConstraints="NO" id="SCr-e1-OSm">
+                                            <rect key="frame" x="16" y="21" width="82" height="74"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88844331781914898" green="0.88844331781914898" blue="0.88844331781914898" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="0k6-In-UmO"/>
+                        <constraint firstAttribute="height" constant="320" id="iNV-iO-MH8"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pointer.png" translatesAutoresizingMaskIntoConstraints="NO" id="zAV-r9-axo">
+                    <rect key="frame" x="267" y="16" width="92" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="77" id="Ap0-QI-DKs"/>
+                        <constraint firstAttribute="width" constant="92" id="Dhy-3c-xxP"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31k-4J-91V">
+                    <rect key="frame" x="-1" y="0.0" width="301" height="128"/>
+                    <color key="backgroundColor" red="0.33725491166114807" green="0.58823531866073608" blue="0.83529412746429443" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bem vindo !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBR-Vl-ez6">
+                    <rect key="frame" x="36" y="192" width="231" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crie um novo local e comece a economizar agora (:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xu-5u-sGU">
+                    <rect key="frame" x="13" y="241" width="269" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.52438604831695557" green="0.5841335654258728" blue="0.59513098001480103" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uns-4Q-4cT">
+                    <rect key="frame" x="86" y="62" width="115" height="115"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_white.png" translatesAutoresizingMaskIntoConstraints="NO" id="Btq-03-znF">
+                            <rect key="frame" x="21" y="17" width="73" height="80"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fdi-32-8Xk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6tS-Wj-5Y1"/>
+                <constraint firstAttribute="trailingMargin" secondItem="zAV-r9-axo" secondAttribute="trailing" constant="8" id="AaU-e7-242"/>
+                <constraint firstItem="fdi-32-8Xk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="KQu-yb-9Ex"/>
+                <constraint firstItem="zAV-r9-axo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="8" id="b5J-e6-bjd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="31k-4J-91V"/>
+                    <exclude reference="XBR-Vl-ez6"/>
+                    <exclude reference="6Xu-5u-sGU"/>
+                    <exclude reference="uns-4Q-4cT"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="222.5" y="326.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundMini.png" width="750" height="527"/>
+        <image name="bolt-baloon.png" width="4368" height="4130"/>
+        <image name="logo_white.png" width="1143" height="1368"/>
+        <image name="pointer.png" width="160" height="160"/>
+    </resources>
+</document>

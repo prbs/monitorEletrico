@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="voL-Iz-7Sn" customClass="TipCardView" customModule="Bolt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J7D-Uo-bwi">
+                    <rect key="frame" x="0.0" y="80" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxF-xy-PhM">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eRl-hn-80O" userLabel="Header">
+                                    <rect key="frame" x="0.0" y="14" width="600" height="170"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJx-M4-HzX">
+                                            <rect key="frame" x="245" y="30" width="110" height="110"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.19996842741966248" green="0.19996842741966248" blue="0.19996842741966248" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="Kyx-Xx-BhL"/>
+                                                <constraint firstAttribute="width" constant="110" id="Per-8Y-WIj"/>
+                                                <constraint firstAttribute="height" constant="110" id="trb-JB-R8c"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="QJx-M4-HzX" secondAttribute="bottom" constant="30" id="6Nm-ww-yci"/>
+                                        <constraint firstItem="QJx-M4-HzX" firstAttribute="centerY" secondItem="eRl-hn-80O" secondAttribute="centerY" id="MxG-aX-BS5"/>
+                                        <constraint firstItem="QJx-M4-HzX" firstAttribute="centerX" secondItem="eRl-hn-80O" secondAttribute="centerX" id="Vxg-Vd-uyB"/>
+                                        <constraint firstItem="QJx-M4-HzX" firstAttribute="centerY" secondItem="eRl-hn-80O" secondAttribute="centerY" id="p5u-tu-RdU"/>
+                                        <constraint firstItem="QJx-M4-HzX" firstAttribute="top" secondItem="eRl-hn-80O" secondAttribute="top" constant="40" id="w12-Lr-TZc"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="MxG-aX-BS5"/>
+                                            <exclude reference="w12-Lr-TZc"/>
+                                        </mask>
+                                    </variation>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieZ-W7-zag" userLabel="Body">
+                                    <rect key="frame" x="0.0" y="185" width="600" height="415"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sH-Ti-lwB">
+                                            <rect key="frame" x="30" y="48" width="540" height="21"/>
+                                            <color key="backgroundColor" red="0.97714852272196018" green="0.97354983341652734" blue="0.96275376550022862" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.33725491166114807" green="0.58823531866073608" blue="0.83529412746429443" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gYV-OD-OdX">
+                                            <rect key="frame" x="150" y="88" width="300" height="177"/>
+                                            <color key="backgroundColor" red="0.97714852272196018" green="0.97354983341652734" blue="0.96275376550022862" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.96278125049999996" green="0.9711412787" blue="0.9892578125" alpha="1" colorSpace="calibratedRGB"/>
+                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                            <color key="textColor" red="0.19996842741966248" green="0.19996842741966248" blue="0.19996842741966248" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.97714852272196018" green="0.97354983341652734" blue="0.96275376550022862" alpha="1" colorSpace="calibratedRGB"/>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="0.93725490570068359" green="0.93333333730697632" blue="0.92156863212585449" alpha="0.0" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="eRl-hn-80O" firstAttribute="top" secondItem="dxF-xy-PhM" secondAttribute="top" id="M73-UA-OZd"/>
+                                <constraint firstItem="ieZ-W7-zag" firstAttribute="top" secondItem="eRl-hn-80O" secondAttribute="bottom" constant="1" id="TkP-dJ-vzk"/>
+                                <constraint firstItem="ieZ-W7-zag" firstAttribute="top" secondItem="dxF-xy-PhM" secondAttribute="top" constant="185" id="XmZ-Kp-QcQ"/>
+                                <constraint firstItem="ieZ-W7-zag" firstAttribute="leading" secondItem="dxF-xy-PhM" secondAttribute="leading" id="Y04-Ju-2yK"/>
+                                <constraint firstItem="ieZ-W7-zag" firstAttribute="trailing" secondItem="eRl-hn-80O" secondAttribute="trailing" id="aEk-mh-5c4"/>
+                                <constraint firstAttribute="bottom" secondItem="ieZ-W7-zag" secondAttribute="bottom" id="hFZ-KG-hhU"/>
+                                <constraint firstAttribute="trailing" secondItem="ieZ-W7-zag" secondAttribute="trailing" id="nGg-lq-mGj"/>
+                                <constraint firstItem="ieZ-W7-zag" firstAttribute="leading" secondItem="eRl-hn-80O" secondAttribute="leading" id="u04-Dc-l3i"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="M73-UA-OZd"/>
+                                </mask>
+                            </variation>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dxF-xy-PhM" secondAttribute="bottom" id="AnE-w7-hXb"/>
+                        <constraint firstItem="dxF-xy-PhM" firstAttribute="leading" secondItem="J7D-Uo-bwi" secondAttribute="leading" id="Bqi-Nr-1cZ"/>
+                        <constraint firstAttribute="trailing" secondItem="dxF-xy-PhM" secondAttribute="trailing" id="PmN-lq-lL6"/>
+                        <constraint firstItem="dxF-xy-PhM" firstAttribute="top" secondItem="J7D-Uo-bwi" secondAttribute="top" id="Um3-mP-BR8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="0.0" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="J7D-Uo-bwi" firstAttribute="width" secondItem="voL-Iz-7Sn" secondAttribute="width" id="3dY-Gz-fq4"/>
+                <constraint firstItem="J7D-Uo-bwi" firstAttribute="height" secondItem="voL-Iz-7Sn" secondAttribute="height" id="6a5-ns-hsQ"/>
+                <constraint firstItem="J7D-Uo-bwi" firstAttribute="leading" secondItem="voL-Iz-7Sn" secondAttribute="leading" id="CHU-74-81F"/>
+                <constraint firstAttribute="bottom" secondItem="J7D-Uo-bwi" secondAttribute="bottom" constant="-80" id="tSv-W7-j3I"/>
+            </constraints>
+            <connections>
+                <outlet property="cardInnerContainer" destination="dxF-xy-PhM" id="R9t-hB-AXX"/>
+                <outlet property="cardOutterContainer" destination="J7D-Uo-bwi" id="e5b-75-nrh"/>
+                <outlet property="tipDescription" destination="gYV-OD-OdX" id="Wgx-ix-R4w"/>
+                <outlet property="tipTitle" destination="0sH-Ti-lwB" id="x4l-Ab-YYk"/>
+                <outlet property="tipView" destination="QJx-M4-HzX" id="TKU-tg-bJZ"/>
+            </connections>
+            <point key="canvasLocation" x="23" y="487"/>
+        </view>
+    </objects>
+</document>

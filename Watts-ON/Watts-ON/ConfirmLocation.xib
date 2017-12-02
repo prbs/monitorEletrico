@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfirmPlaceViewController" customModule="Bolt" customModuleProvider="target">
+            <connections>
+                <outlet property="addedContainer" destination="3Wz-Jo-xSQ" id="c5T-4i-rzv"/>
+                <outlet property="adminImg" destination="eXu-4K-lDZ" id="bq6-Zj-QBg"/>
+                <outlet property="adminName" destination="A30-JY-4fN" id="HGF-6k-Bjx"/>
+                <outlet property="confInnerCont" destination="aNe-u3-nc2" id="TeH-qy-Ruc"/>
+                <outlet property="confirmOutterCont" destination="9DE-OH-at1" id="Aoi-qv-saS"/>
+                <outlet property="confirmRelationship" destination="cag-Pc-x60" id="auv-Ji-hco"/>
+                <outlet property="contentContainer" destination="Y8c-5B-ZpC" id="I2a-oQ-DOC"/>
+                <outlet property="infoContainer" destination="XFh-vr-a38" id="Tko-QS-cor"/>
+                <outlet property="placeName" destination="S0S-zP-YZM" id="IYr-ob-MXY"/>
+                <outlet property="placeTypeImg" destination="kKl-xf-gcw" id="F9C-7k-6dd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="D2C-qi-l1Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9DE-OH-at1">
+                    <rect key="frame" x="39" y="137" width="300" height="335"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundMini.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kjq-5f-w6U">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="134"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNe-u3-nc2">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="335"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8c-5B-ZpC">
+                                    <rect key="frame" x="0.0" y="127" width="300" height="216"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do local" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0S-zP-YZM">
+                                            <rect key="frame" x="14" y="10" width="271" height="21"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" red="0.19996842741966248" green="0.19996842741966248" blue="0.19996842741966248" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XFh-vr-a38">
+                                            <rect key="frame" x="8" y="55" width="285" height="70"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nome do administrador" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A30-JY-4fN">
+                                                    <rect key="frame" x="101" y="36" width="176" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eXu-4K-lDZ">
+                                                    <rect key="frame" x="35" y="11" width="48" height="48"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Administrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ign-BF-JUW">
+                                                    <rect key="frame" x="101" y="14" width="176" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.52438604831695557" green="0.5841335654258728" blue="0.59513098001480103" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </view>
+                                        <view hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Wz-Jo-xSQ">
+                                            <rect key="frame" x="8" y="40" width="285" height="98"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pronto!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBT-de-UEO">
+                                                    <rect key="frame" x="67" y="16" width="151" height="27"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Você foi adicionado como visitante deste local (:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOk-Ki-j0h">
+                                                    <rect key="frame" x="19" y="43" width="247" height="47"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" red="0.52438604831695557" green="0.5841335654258728" blue="0.59513098001480103" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cag-Pc-x60">
+                                            <rect key="frame" x="45" y="152" width="210" height="35"/>
+                                            <state key="normal" title="Confirmar" backgroundImage="btn-blue.png">
+                                                <color key="titleColor" red="0.16470588743686676" green="0.44313725829124451" blue="0.61960786581039429" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="confirmLocation:" destination="-1" eventType="touchUpInside" id="eyS-nx-ZK8"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMZ-WE-3fe">
+                                    <rect key="frame" x="219" y="-19" width="100" height="100"/>
+                                    <state key="normal" image="close-btn.png"/>
+                                    <connections>
+                                        <action selector="closeDialog:" destination="-1" eventType="touchUpInside" id="neo-ta-j0D"/>
+                                    </connections>
+                                </button>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kKl-xf-gcw">
+                                    <rect key="frame" x="110" y="25" width="80" height="80"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.16470588743686676" green="0.44313725829124451" blue="0.61960786581039429" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88353529370204253" green="0.89446299371403182" blue="0.92724609375" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="5xZ-Af-8N1"/>
+                        <constraint firstAttribute="height" constant="335" id="UjW-8d-OfI"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="9DE-OH-at1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="kcJ-Pf-HWb"/>
+                <constraint firstItem="9DE-OH-at1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="ln6-PJ-8aH"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="322.5" y="232.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backgroundMini.png" width="750" height="527"/>
+        <image name="btn-blue.png" width="1024" height="183"/>
+        <image name="close-btn.png" width="228" height="225"/>
+    </resources>
+</document>

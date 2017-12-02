@@ -1,0 +1,21 @@
+Para hoje:
+
+# Cadastro de novos dispositivos principais e associção de novos usuário a um dispositivo.
+
+	ok - Cadastrar um novo dispositivo como administrador, com chave do dispositivo válida. (permitido)
+
+	ok - Cadastrar um novo dispositivo como administrador e chave do dispositivo não válida. (não permitido)
+
+	ok - Cadastrar o mesmo dispositivo para um usuário que já é dono. (não permitido).
+
+	ok - Cadastrar um novo dispositivo como administrador, com chave do dispositivo válida e dispositivo alocado para outro dono. (não permitido)
+
+	ok - Trocar gerenciamento do dispositivo. Cadastrar um usuário como administrador para um dispositivo que foi desconectado do último dono. (permitir) 
+
+	ok - Não permitir que um usuário já cadastrado como visitante ou administrador seja cadastrado novamente como visitante. (não permitido)
+
+	NÃO OK - Se usuário logado Deletar conta do usuário e todas as relações com dispositivos.
+
+	OBS: ERRO ao deletar. acontece erro de token no próximo acesso.
+
+

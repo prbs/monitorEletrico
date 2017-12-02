@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EAB21DEABCA76766E9F2C4A12F3FA3584DD670E5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EAB21DEABCA76766E9F2C4A12F3FA3584DD670E5" : 0,
+    "45828868FAD1D3B944590BDA33473B31404B2AC1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "681FEE66-EA38-4C4C-9B7F-77AF6045BBE4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EAB21DEABCA76766E9F2C4A12F3FA3584DD670E5" : "watts-on\/",
+    "45828868FAD1D3B944590BDA33473B31404B2AC1" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Bolt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Watts-ON\/Bolt.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:DiegoSilva777\/invasores-do-planalto.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "45828868FAD1D3B944590BDA33473B31404B2AC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:jarvisBigChallenge\/watts-on.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EAB21DEABCA76766E9F2C4A12F3FA3584DD670E5"
+    }
+  ]
+}
